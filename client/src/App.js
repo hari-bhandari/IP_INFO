@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from "./Components/Layout/Navbar";
 import WelcomePage from "./Components/sections/WelcomePage";
 import Features from "./Components/sections/Features";
+import AboutMe from "./Components/sections/AboutMe";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar/>
       <WelcomePage/>
       <Features/>
+      <AboutMe/>
     </div>
   );
 }
