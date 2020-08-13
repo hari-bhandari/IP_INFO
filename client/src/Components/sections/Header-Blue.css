@@ -1,41 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .header-blue {
   background: linear-gradient(135deg, #172a74, #21a9af);
   background-color: #184e8e;
@@ -232,3 +194,16 @@
   width: 100%;
   height: auto;
 }
+
+.header-blue .iphone-mockup .screen:before {
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  width: 70%;
+  height: 140%;
+  top: -12%;
+  right: -60%;
+  transform: rotate(-19deg);
+  opacity: 0.2;
+}
+

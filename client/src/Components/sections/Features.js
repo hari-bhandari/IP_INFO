@@ -2,28 +2,28 @@ import React from 'react';
 
 const Features = () => {
     return (
-        <div className="clean-block features">
+        <div className="clean-block features" id="features">
             <div className="container">
                 <div className="block-heading">
                     <h2 className="text-info">Features</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+                    <p>An open Source API</p>
                 </div>
                 <div className="row justify-content-center">
                     <div className="col-md-5 feature-box"><i className="icon-star icon"></i>
-                        <h4>Bootstrap 4</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+                        <h4>Fast and reliable</h4>
+                        <p>This API is fast as it is hosted in reliable web service.</p>
                     </div>
                     <div className="col-md-5 feature-box"><i className="icon-pencil icon"></i>
-                        <h4>Customizable</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+                        <h4>FREE</h4>
+                        <p>Unlike other API, This api is FREE, so No monthly charges...</p>
                     </div>
                     <div className="col-md-5 feature-box"><i className="icon-screen-smartphone icon"></i>
-                        <h4>Responsive</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+                        <h4>Uses JSON</h4>
+                        <p>You'll know how easy it is to work with json.</p>
                     </div>
                     <div className="col-md-5 feature-box"><i className="icon-refresh icon"></i>
-                        <h4>All Browser Compatibility</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+                        <h4>Open Source</h4>
+                        <p>This whole project is an open source. So, You can help me add new features!</p>
                     </div>
                 </div>
             </div>

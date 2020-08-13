@@ -1,19 +1,29 @@
 import React from 'react';
+import './Header-Blue.css'
+import './styles.css'
+import Navbar from "../Layout/Navbar";
 import Coding from "./WelcomePage/Coding";
 
 const WelcomePage = () => {
     return (
-            <div className="page landing-page ">
-                <section className="clean-block clean-hero" style={{color:"rgba(9,162,255,0.85"}}>
-                    <div className="row">
-                        <div className="text">
-                            <h2>Lorem ipsum dolor sit amet.</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
-                            <button className="btn btn-outline-light btn-lg" type="button">Learn More</button>
-                        </div>
+        <div className="header-blue">
+            <Navbar/>
+            <div className="container hero">
+                <div className="row">
+                    <div className="col-12 col-lg-6 col-xl-5 offset-xl-1">
+                        <h1>By developer. For developers...</h1>
+                        <p>This is an Open source API to help you get clients IP with a single request.</p>
+                        <button className="btn btn-light btn-lg action-button" type="button"><a href="https://documenter.getpostman.com/view/10917205/T1LMk8Zb?version=latest">See documentation on POST MAN</a></button>
                     </div>
-                </section>
+                    <div className="col-lg-1">
+
+                    </div>
+                    <div className=" col-lg-5 d-none d-lg-block">
+                       <Coding/>
+                    </div>
+                </div>
             </div>
+        </div>
     );
 };
 
