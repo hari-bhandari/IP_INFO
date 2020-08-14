@@ -4,7 +4,6 @@ const emojiFlags=require('emoji-flags')
 const router=express.Router();
 router.get('/',async(req,res)=>{
     let getIp=req.ip.substr(7)
-    getIp='77.102.131.234'
     if(getIp===''){
         res.send('Something went wrong')
     }
