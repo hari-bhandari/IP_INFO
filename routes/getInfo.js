@@ -9,7 +9,7 @@ router.get('/',async(req,res)=>{
     if (getIp === '') {
         res.send('Something went wrong')
     }
-    if (info) {
+    if (info){
         const countryInfo = emojiFlags.countryCode(info.country)
         res.status(200).json({
 
