@@ -2,7 +2,7 @@ import React from 'react';
 import ReactJson from 'react-json-view'
 
 const Documentation = ({res}) => {
-    let getIP, getIPInfo
+    let getIP, getIPInfo,getIPInfoByIP
     if (res) {
         getIP = {
             method: `curl ${res.url}/ip`,
@@ -13,6 +13,13 @@ const Documentation = ({res}) => {
         }
         getIPInfo = {
             method: `curl ${res.url}/getIPinfo`,
+            response: {
+                res
+            }
+
+        }
+        getIPInfoByIP = {
+            method: `curl ${res.url}/getIPinfo/:YourIP`,
             response: {
                 res
             }
@@ -33,6 +40,12 @@ const Documentation = ({res}) => {
                     <br/>
                     <h5 className="text-info">curl {`${res.url}/getIpInfo`} </h5>
                     <ReactJson style={{textAlign:"left"}} src={getIPInfo}  name={false}
+                               displayObjectSize={false}
+                               displayDataTypes={false}
+                               enableClipboard={false}/>
+                               <br/>
+                    <h5 className="text-info">curl {`${res.url}/getIpInfo/:YourIP`} </h5>
+                    <ReactJson style={{textAlign:"left"}} src={getIPInfoByIP}  name={false}
                                displayObjectSize={false}
                                displayDataTypes={false}
                                enableClipboard={false}/>

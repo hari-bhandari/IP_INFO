@@ -11,6 +11,7 @@ app.use(cors())
 app.use('/ip',require('./routes/getIp'))
 app.use('/getIpInfo',require('./routes/getInfo'))
 
+
 app.use(express.static(path.join(__dirname,'public')))
 const server=app.listen(PORT,console.log(`server running in Production mode on port ${PORT}`))
 //handle unhandled promised rejections
