@@ -24,9 +24,18 @@ function App() {
         }
 
     }
-    useEffect(()=>{
-        getIP()
+    useEffect(async ()=>{
+        await getIP()
+        //changing favicon
+
     },[])
+    //changing favicon
+    useEffect(()=>{
+        if(response) {
+            const favicon = document.getElementById('favicon')
+            favicon.href = response.flagUrl
+        }
+    },[response])
   return (
     <div className="App">
       <WelcomePage res={response}/>
