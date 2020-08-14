@@ -15,7 +15,7 @@ function App() {
             redirect: 'follow'
         };
         try {
-            const res = await fetch("http://localhost:5000/getipInfo", requestOptions)
+            const res = await fetch("https://ip-api-ml.herokuapp.com/getipinfo", requestOptions)
             setResponse(await res.clone().json())
 
         } catch (e) {
