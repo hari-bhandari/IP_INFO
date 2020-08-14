@@ -4,7 +4,7 @@ const emojiFlags=require('emoji-flags')
 const router=express.Router();
 router.get('/',async(req,res)=>{
 
-    let getIp = req.ip.substr(7)
+    let getIp = req.ip
     const info = geoip.lookup(getIp)
     if (getIp === '') {
         res.send('Something went wrong')
@@ -35,7 +35,7 @@ router.get('/',async(req,res)=>{
 })
 router.get('/:ip',async(req,res)=>{
     let sent=false
-    let getIp=req.ip.substr(7)
+    let getIp=req.ip
     if(req.params.ip){
         const providedIp=req.params.ip
         if(/^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(providedIp)){
