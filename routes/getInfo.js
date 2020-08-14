@@ -21,7 +21,8 @@ router.get('/',async(req,res)=>{
             emoji:countryInfo.emoji,
             emojiUnicode:countryInfo.unicode
         },
-        flagUrl:`${req.protocol}://${req.get('host')}/flag/${info.country.toLowerCase()}.svg`
+        flagUrl:`${req.protocol}://${req.get('host')}/flag/${info.country.toLowerCase()}.svg`,
+        url:`${req.protocol}://${req.get('host')}`
 
     })
 })

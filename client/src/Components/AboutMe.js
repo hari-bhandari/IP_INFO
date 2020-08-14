@@ -30,7 +30,7 @@ const AboutMe = () => {
                             <p className="text-bolder"><b className="about-me-font-size">Mail: </b><span className="text-lighter about-me-font-size">2012bhandari.ha@gmail.com</span></p>
                         </div>
                     </div>
-                    <a href="https://onedrive.live.com/view.aspx?resid=5379E04708716358!47098&ithint=file%2cdocx&authkey=!AKkXWahNjST-y4s"><button className="btn btn-dark text-uppercase mr-3">Download CV</button></a>
+                    <a href="https://haribhandari.me"><button className="btn btn-dark text-uppercase mr-3">Check out my portfolio</button></a>
                 </div>
             </div>
         </section>

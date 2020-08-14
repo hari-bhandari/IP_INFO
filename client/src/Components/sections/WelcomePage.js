@@ -4,7 +4,7 @@ import './styles.css'
 import Navbar from "../Layout/Navbar";
 import Coding from "./WelcomePage/Coding";
 
-const WelcomePage = () => {
+const WelcomePage = ({res}) => {
     return (
         <div className="header-blue">
             <Navbar/>
@@ -19,7 +19,7 @@ const WelcomePage = () => {
 
                     </div>
                     <div className=" col-lg-5 d-none d-lg-block">
-                       <Coding/>
+                       <Coding res={res}/>
                     </div>
                 </div>
             </div>
