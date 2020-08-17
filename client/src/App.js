@@ -6,8 +6,12 @@ import Features from "./Components/sections/Features";
 import Footer from "./Components/Layout/Footer";
 import AboutMe from "./Components/AboutMe";
 import Documentation from "./Components/sections/Documentation";
+//initialising analytics
+import ReactGA from 'react-ga';
 
 function App() {
+    ReactGA.initialize('UA-91344343-2')
+    ReactGA.pageview(window.location.pathname+window.location.search)
     const [response, setResponse] = useState(null)
     const getIP = async () => {
         const requestOptions = {
@@ -24,8 +28,8 @@ function App() {
         }
 
     }
-    useEffect(async ()=>{
-        await getIP()
+    useEffect( ()=>{
+         getIP()
         //changing favicon
 
     },[])
